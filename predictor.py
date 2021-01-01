@@ -1,5 +1,5 @@
 class predictor:
-    def predict(file):
+    def predict(self, file):
         import cv2
         import numpy as np
         import tensorflow as tf

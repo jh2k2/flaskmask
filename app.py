@@ -8,7 +8,7 @@ def home():
 	if request.method == 'POST':
 		file = request.files['file'].read()
 		result = predictor.predict(file)
-		return result[0]
+		return result
 	else:
 		return render_template('index.html')
 

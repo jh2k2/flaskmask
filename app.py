@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 from predictor import predictor
 
-app = Flask(__name__)
+app = Flask(name)
 
 @app.route('/', methods=['POST', 'GET'])
 def home():

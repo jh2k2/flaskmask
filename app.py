@@ -16,5 +16,5 @@ def home():
 def aboutus():
     return render_template('aboutus.html')
 
-if name == 'main':
+if __name__ == '__main__':
     app.run(debug=True)

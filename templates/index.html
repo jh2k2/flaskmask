@@ -17,11 +17,12 @@
       </ul>
     </div>
       <h1 class="container text-center mt-5">Flask Mask</h1>
-      <div class="container text-center form-group mt-5">
-        <form action="{{ url_for('home')}}" method="post" enctype=multipart/form-data>
-          <input class="form-control" type="file" accept="image/*" name="file">
-          <input class="btn btn-danger mt-5" type="submit" value="Predict">
+    <div class="container text-center form-group mt-5">
+      <form action="{{ url_for('home')}}" method="post" enctype=multipart/form-data>
+        <input class="form-control" type="file" accept="image/*" name="file">
+        <input class="btn btn-danger m-5" type="submit" value="Predict">
       </form>
+      <h3> {{str}} </h3>
     </div>
   </body>
 </html>

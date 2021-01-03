@@ -42,12 +42,12 @@ class predictor:
 
         ##label + score
         if classes[0][0] == 3 or classes[0][1] == 3:
-            return 'Mask Wore Incorrectly'
+            return 'Mask Worn Incorrectly'
         elif classes[0][0] == 1:
-            return 'With Mask'
+            return 'Wearing Mask'
         elif classes[0][0] == 2:
-            return 'Without Mask'
-        
+            return 'Not Wearing Mask'
+
 
 '''
 # Draw the results of the detection (aka 'visulaize the results')

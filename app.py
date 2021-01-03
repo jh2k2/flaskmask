@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 from predictor import predictor
+from jinja2 import Template
 
 app = Flask(__name__)
 
@@ -8,7 +9,8 @@ def home():
     if request.method == 'POST':
         file = request.files['file'].read()
         result = predictor.predict(file)
-        return result
+        return render_template('index.html', str=result)
+
     else:
         return render_template('index.html')
 
